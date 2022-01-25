@@ -6,7 +6,7 @@ on:
       - master
   pull_request:
 
-defaults:
+jobs:
   # define job to build and publish docker image
   build-and-push-docker-image:
     name: Build Docker image and push to repositories
@@ -33,7 +33,7 @@ defaults:
           context: ./graalvm-native-java
           tag: |
             ghcr.io/${{ github.repository }}/graalvm-native-java:${{{ github.ref }}#{{ github.workflow }}}
-          push: ${{ github.ref == 'refs/heads/main' }}
+          push: ${{ github.ref == 'refs/heads/master' }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
