@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./graalvm-native-java
-          tag: |
+          tags: |
             ghcr.io/${{ github.repository }}/graalvm-native-java:{${{ github.ref }}#{{ github.workflow }}}
           push: ${{ github.ref == 'refs/heads/master' }}
 
