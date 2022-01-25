@@ -32,7 +32,7 @@ jobs:
         with:
           context: ./graalvm-native-java
           tag: |
-            ghcr.io/${{ github.repository }}/graalvm-native-java:${{{ github.ref }}#{{ github.workflow }}}
+            ghcr.io/${{ github.repository }}/graalvm-native-java:{${{ github.ref }}#{{ github.workflow }}}
           push: ${{ github.ref == 'refs/heads/master' }}
 
       - name: Image digest
