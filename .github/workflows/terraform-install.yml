@@ -13,8 +13,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Terraform
         run: |
-          pwd
-          ls -la
           chmod +x ./terraform/terraform-install.sh
-          ./terraform/terraform-installa.sh
+          ./terraform/terraform-install.sh
         shell: bash
