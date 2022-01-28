@@ -15,5 +15,5 @@ jobs:
         run: |
           cd terraform
           chmod +x terraform-install.sh
-          terraform-install.sh
+          sh terraform-install.sh
         shell: bash
