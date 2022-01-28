@@ -1,0 +1,20 @@
+name: kubernetes-install
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Local-installation-of-kubernetes:
+    name: kubernetes for Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install kubernetes
+        run: |
+          cd kubernetes
+          chmod +x eksctl.sh  kubectl.sh
+          sh eksctl.sh
+          sh kubectl.sh
+        shell: bash
