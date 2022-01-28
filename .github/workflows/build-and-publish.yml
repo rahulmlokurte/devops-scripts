@@ -1,4 +1,4 @@
-name: Build and Publish
+name: spring-native-build-and-publish
 
 on:
   push:
