@@ -1,4 +1,6 @@
 [![Build and Publish](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/build-and-publish.yml/badge.svg?branch=master)](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/build-and-publish.yml)
+[![terraform-install](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/terraform-install.yml/badge.svg?branch=master)](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/terraform-install.yml)
+[![kubernetes-install](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/kubernetes-install.yaml/badge.svg?branch=master)](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/kubernetes-install.yaml)
 
 # devops-scripts
 
