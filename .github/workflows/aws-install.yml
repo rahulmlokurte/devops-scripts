@@ -15,5 +15,5 @@ jobs:
         run: |
           cd aws
           chmod +x awscli.sh
-          awscli.sh
+          sh awscli.sh
         shell: bash
