@@ -28,6 +28,7 @@ jobs:
           cd terraform
           echo $(terraform version) > terraform-versions.txt
           echo $(tflint --version) >> terraform-versions.txt
+          cat terrform-versions.txt
         shell: bash
       - name: Upload the versions.txt file
         uses: actions/upload-artifact@v1
@@ -45,6 +46,6 @@ jobs:
           name: terraform-versions
       - name: Check the versions
         run: |
-          echo "Terraform version: $(cat terraform-versions)"
-          echo "Tflint version: $(cat terraform-versions | tail -n +2)"
+          echo "Terraform version: $(cat terraform-versions.txt)"
+          echo "Tflint version: $(cat terraform-versions.txt | tail -n +2)"
         shell: bash
