@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: terraform-versions
-          path: terraform-versions.txt
+          path: terraform/terraform-versions.txt
   Download-the-artifact:
     name: Download the artifact
     needs: Local-installation-of-terraform
@@ -46,6 +46,7 @@ jobs:
           name: terraform-versions
       - name: Check the versions
         run: |
+          ls -la
           echo "Terraform version: $(cat terraform-versions.txt)"
           echo "Tflint version: $(cat terraform-versions.txt | tail -n +2)"
         shell: bash
