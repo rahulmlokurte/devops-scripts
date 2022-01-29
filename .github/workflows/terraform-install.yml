@@ -26,7 +26,6 @@ jobs:
       - name: Check the installation
         working-directory: terraform
         run: |
-          cd terraform
           echo $(terraform version) > terraform-versions.txt
           echo $(tflint --version) >> terraform-versions.txt
           ls -la
