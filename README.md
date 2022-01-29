@@ -13,3 +13,4 @@ Below are the currently supported tools:
 - [kubernetes](./kubernetes)
 - [terraform](./terraform)
 - [graalvm](./graalvm-native-java)
+- [aws](./aws)
