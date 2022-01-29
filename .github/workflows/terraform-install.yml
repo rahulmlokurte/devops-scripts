@@ -36,6 +36,7 @@ jobs:
         shell: bash
   Download-the-artifact:
     name: Download the artifact
+    needs: Local-installation-of-terraform
     runs-on: ubuntu-latest
     steps:
       - name: Download the artifact
