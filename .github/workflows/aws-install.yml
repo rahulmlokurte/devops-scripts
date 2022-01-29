@@ -1,0 +1,19 @@
+name: aws-install
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Local-installation-of-aws:
+    name: AWSCLI for Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install aws cli
+        run: |
+          cd aws
+          chmod +x awscli.sh
+          awscli.sh
+        shell: bash
