@@ -29,7 +29,7 @@ jobs:
           echo $(terraform version) > terraform-versions.txt
           echo $(tflint --version) >> terraform-versions.txt
           ls -la
-          cat terrform-versions.txt
+          cat terraform-versions.txt
         shell: bash
       - name: Upload the versions.txt file
         uses: actions/upload-artifact@v1
