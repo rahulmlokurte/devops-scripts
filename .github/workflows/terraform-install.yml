@@ -23,3 +23,9 @@ jobs:
           chmod +x tflint.sh
           sh tflint.sh
         shell: bash
+      - name: Check the installation
+        run: |
+          cd terraform
+          echo $(terraform version) > versions.txt
+          echo $(tflint --version) >> versions.txt
+        shell: bash
