@@ -45,9 +45,3 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: terraform-versions
-      - name: Check the versions
-        run: |
-          ls -la
-          echo "Terraform version: $(cat terraform-versions.txt)"
-          echo "Tflint version: $(cat terraform-versions.txt | tail -n +2)"
-        shell: bash
