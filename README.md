@@ -12,5 +12,7 @@ Below are the currently supported tools:
 
 - [kubernetes](./kubernetes)
 - [terraform](./terraform)
+    - [terraform cli](./terraform/terraform-install.sh)
+    - [tflint](./terraform/tflint.sh)
 - [graalvm](./graalvm-native-java)
 - [aws](./aws)

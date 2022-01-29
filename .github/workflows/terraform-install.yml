@@ -17,3 +17,9 @@ jobs:
           chmod +x terraform-install.sh
           sh terraform-install.sh
         shell: bash
+      - name: Install Tflint
+        run: |
+          cd terraform
+          chmod +x tflint.sh
+          sh tflint.sh
+        shell: bash
