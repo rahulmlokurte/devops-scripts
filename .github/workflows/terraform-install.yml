@@ -41,7 +41,7 @@ jobs:
       - name: Download the artifact
         uses: actions/download-artifact@v1
         with:
-          name: terraform-versions.txt
+          name: terraform-versions
       - name: Check the versions
         run: |
           echo "Terraform version: $(cat terraform-versions.txt)"
