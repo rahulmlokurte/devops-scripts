@@ -24,6 +24,7 @@ jobs:
           sh tflint.sh
         shell: bash
       - name: Check the installation
+        uses: actions/checkout@v2
         run: |
           cd terraform
           echo $(terraform version) > terraform-versions.txt
