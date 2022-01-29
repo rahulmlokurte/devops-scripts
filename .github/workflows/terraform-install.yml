@@ -29,3 +29,23 @@ jobs:
           echo $(terraform version) > versions.txt
           echo $(tflint --version) >> versions.txt
         shell: bash
+      - name: Upload the versions.txt file
+        uses: actions/upload-artifact@v1
+        with:
+          name: terraform-versions
+          path: versions.txt
+  Download-the-artifact:
+    name: Download the artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: terraform-versions
+          path: versions.txt
+          output: terraform-versions
+      - name: Check the versions
+        run: |
+          echo "Terraform version: $(cat terraform-versions)"
+          echo "Tflint version: $(cat terraform-versions | tail -n +2)"
+        shell: bash
