@@ -7,6 +7,8 @@
 This repository contains a collection of scripts that I use to automate my devops work. It contains scripts
 to install kubernetes, terraform and few other tools.
 
+## Supported Tools
+
 Below are the currently supported tools:
 
 - [terraform](./terraform)
@@ -14,3 +16,15 @@ Below are the currently supported tools:
     - [tflint](./terraform/tflint.sh)
 - [aws](./aws)
 - [kubernetes](./kubernetes)
+
+## Prerequisites
+
+- wsl for Widows
+- Ubuntu 20.04
+
+## How to use this repository
+
+- Clone the repository [devops-scripts](https://github.com/rahulmlokurte/devops-scripts)
+- Run the scripts by going to particular directory (for example aws)
+- Run the scripts by running the script present in the folder (for example awscli.sh)
+- It will install the required tools (for example awscli)
