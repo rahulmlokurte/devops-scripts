@@ -23,25 +23,3 @@ jobs:
           chmod +x tflint.sh
           sh tflint.sh
         shell: bash
-      - name: Check the installation
-        working-directory: terraform
-        run: |
-          echo $(terraform version) > terraform-versions.txt
-          echo $(tflint --version) >> terraform-versions.txt
-          ls -la
-          cat terraform-versions.txt
-        shell: bash
-      - name: Upload the versions.txt file
-        uses: actions/upload-artifact@v1
-        with:
-          name: terraform-versions
-          path: terraform/terraform-versions.txt
-  Download-the-artifact:
-    name: Download the artifact
-    needs: Local-installation-of-terraform
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download the artifact
-        uses: actions/download-artifact@v1
-        with:
-          name: terraform-versions
