@@ -28,3 +28,11 @@ Below are the currently supported tools:
 - Run the scripts by going to particular directory (for example aws)
 - Run the scripts by running the script present in the folder (for example awscli.sh)
 - It will install the required tools (for example awscli)
+
+## Authors
+
+This repository is managed by [Rahul Lokurte](https://github.com/rahulmlokurte)
+
+## License
+
+MIT licensed. See [LICENSE](LICENSE) for full details.
