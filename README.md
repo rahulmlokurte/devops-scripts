@@ -2,7 +2,7 @@
 [![kubernetes-install](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/kubernetes-install.yaml/badge.svg?branch=master)](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/kubernetes-install.yaml)
 [![aws-install](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/aws-install.yml/badge.svg)](https://github.com/rahulmlokurte/devops-scripts/actions/workflows/aws-install.yml)
 
-# devops-scripts
+# Local-Software-Install-Scripts
 
 This repository contains a collection of scripts that I use to automate my devops work. It contains scripts
 to install kubernetes, terraform and few other tools.
