@@ -15,6 +15,8 @@ Below are the currently supported tools:
     - [terraform cli](./terraform/terraform-install.sh)
     - [tflint](./terraform/tflint.sh)
 - [aws](./aws)
+    - [aws cli](./aws/awscli.sh)   
+    - [aws SAM cli](./aws/aws-sam-cli.sh)
 - [kubernetes](./kubernetes)
 
 ## Prerequisites
