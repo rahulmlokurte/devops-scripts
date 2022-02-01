@@ -18,6 +18,8 @@ Below are the currently supported tools:
     - [aws cli](./aws/awscli.sh)   
     - [aws SAM cli](./aws/aws-sam-cli.sh)
 - [kubernetes](./kubernetes)
+    - [kubectl](./kubernetes/kubectl.sh)
+    - [eksctl](./kubernetes/eksctl.sh)
 
 ## Prerequisites
 
