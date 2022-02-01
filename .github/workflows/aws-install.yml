@@ -14,6 +14,7 @@ jobs:
       - name: Install aws cli
         run: |
           cd aws
-          chmod +x awscli.sh
+          chmod +x awscli.sh aws-sam-cli.sh
           sh awscli.sh
+          sh aws-sam-cli.sh
         shell: bash
