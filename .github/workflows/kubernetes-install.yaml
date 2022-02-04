@@ -14,7 +14,8 @@ jobs:
       - name: Install kubernetes
         run: |
           cd kubernetes
-          chmod +x eksctl.sh  kubectl.sh
+          chmod +x eksctl.sh  kubectl.sh helm.sh
           sh eksctl.sh
           sh kubectl.sh
+          sh helm.sh
         shell: bash
