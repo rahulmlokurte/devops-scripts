@@ -20,6 +20,7 @@ Below are the currently supported tools:
 - [kubernetes](./kubernetes)
     - [kubectl](./kubernetes/kubectl.sh)
     - [eksctl](./kubernetes/eksctl.sh)
+    - [helm](./kubernetes/helm.sh)
 
 ## Prerequisites
 
